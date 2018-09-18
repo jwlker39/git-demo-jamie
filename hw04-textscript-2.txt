@@ -172,3 +172,92 @@ Completed 200 OK in 1400ms (Views: 1370.0ms | ActiveRecord: 0.0ms)
 
 ^C- Gracefully stopping, waiting for requests to finish
 === puma shutdown: 2018-09-18 03:53:48 +0000 ===
+- Goodbye!
+Exiting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$   git log --graph --oneline --all --decorate
+[?1h=* [33m8359666[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mabout-page[m[33m)[m Added about view[m
+* [33meee6280[m Added about action to pages controller[m
+* [33mbcf6413[m Added route for about page[m
+* [33m562c71f[m[33m ([m[1;32mmaster[m[33m)[m Deleted AUTHORS file[m
+* [33maaae29c[m Renamed AUTHORS to be a Markdown file[m
+* [33m9aef39c[m Added AUTHORS FILE[m
+* [33md6a9290[m Fixed bug in heading of home page[m
+* [33mef53e0e[m Updated home page heading to fully expand Application[m
+* [33me4c2052[m Updated heading of home page view[m
+* [33m3421a81[m Revert "Updated home page view"[m
+* [33mee98ea0[m Updated home page view[m
+* [33mdc0c1ae[m Added a home page[m
+* [33m7daa12b[m Started Git Demo project[m
+[K[?1l>[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	app/controllers/pages_controller.rb
+	config/routes.rb
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git add -A
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git commi[K[K[K[K[K[K[K[K[Kgit checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	config/routes.rb
+	hw04-textscript-2.txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git commit -m "Update"
+[about-page 593d1b8] Update
+ 4 files changed, 79 insertions(+), 7 deletions(-)
+ delete mode 100644 app/views/pages/about.html.erb
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git checkout master
+warning: unable to unlink hw04-textscript-2.txt: Text file busy
+Switched to branch 'master'
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git log --graph --oneline --all --decorate
+[?1h=* [33m593d1b8[m[33m ([m[1;32mabout-page[m[33m)[m Update[m
+* [33m8359666[m Added about view[m
+* [33meee6280[m Added about action to pages controller[m
+* [33mbcf6413[m Added route for about page[m
+* [33m562c71f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Deleted AUTHORS file[m
+* [33maaae29c[m Renamed AUTHORS to be a Markdown file[m
+* [33m9aef39c[m Added AUTHORS FILE[m
+* [33md6a9290[m Fixed bug in heading of home page[m
+* [33mef53e0e[m Updated home page heading to fully expand Application[m
+* [33me4c2052[m Updated heading of home page view[m
+* [33m3421a81[m Revert "Updated home page view"[m
+* [33mee98ea0[m Updated home page view[m
+* [33mdc0c1ae[m Added a home page[m
+* [33m7daa12b[m Started Git Demo project[m
+[K[?1l>[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git branch
+  about-page[m
+* [32mmaster[m
+[vagrant@ubuntu-xenial:~/workspace/git-demo]
+$ git 
